@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.app {
+    position: relative;
+    width: 500px;
+    height: 90vh;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    /**/
+    /*background: blue;*/
+    margin-top: 10px;
+
+}
+/*todo 输入框*/
+#todo {
+    width: 437px;
+    height: 90vh;
+    /*background: red;*/
+    /*margin: 0 auto;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 10px;*/
+    /**/
+    position: absolute;
+    right: 0px;
+}
+/**/
+.viewpart{
+    width: 100%;
+    float: right;
+    padding: 20px 10px;
+
+}
+/*按钮的通用样式*/
+.viewpart .btn{
+    text-align: center;
+    display:inline-block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border-radius:5px;
+    color:#fff;
+    margin-left:10px;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+/*输入框的样式*/
+#id-input-todo {
+    padding:5px 12px;
+    width:300px;
+    height:50px;
+    font-size:1.2rem;
+    border-radius:5px;
+    border: 1px solid #ccc;
+}
+/*添加按钮的样式*/
+.add{
+    background:#5CC853;
+}
+/*todo列表的样式*/
+.todos {
+    margin-top:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    overflow:hidden;
+}
+/*每个栏目的样式*/
+.todoUl {
+    padding:10px 16px;
+    height:60px;
+    line-height:60px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+/*圆形-状态的样式*/
+.todoState {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #5CC853;
+    /*垂直居中*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*内容的样式*/
+.content {
+    left:50px;
+    cursor:pointer;
+    width: 100px;
+    /*垂直居中*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*完成的样式*/
+.finished {
+    background:#ccc;
+    transition:all 0.5s;
+}
+.active {
+    transition:all 0.5s;
+    color:#ccc;
+    text-decoration: line-through;
+}
+/*删除按钮的样式*/
+.del {
+    border-bottom:none;
+
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:16px;
+    width:50px !important;
+    background:#FFDA44;
+}
+/*时间的样式*/
+.timeAt {
+    position:absolute;
+    right:90px;
+    color:#ccc;
+    font-size:0.5rem;
+}
+
+
+/*left 侧边栏*/
+.todo-left {
+    width: 60px;
+    height: 90vh;
+    /*background: red;*/
+    /*float: left;*/
+    position: absolute;
+    left: 0px;
+    border-right: 1px solid black;
+    border-radius: 10px;
+    /**/
+    background: #353D40;
+}
+/*头像样式*/
+.logo {
+    text-align: center;
+    margin: 20px 0px;
+}
+.logo img  {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+/*“主题”的文字样式*/
+.theme {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    background: #2c3032;
+    color: #00bff3;
+}
+
+/*颜色列表页*/
+.theme-color {
+    display: none;
+    overflow: hidden;
+    height: 120px;
+    width: auto;
+    /*background: red;*/
+    /* opacity: 0; */
+    transition: overflow 0.8s ease, height 0.8s ease;
+}
+.show {
+    display: block;
+}
+/*颜色列表页*/
+.themeL {
+    /*border: 1px solid lightblue;*/
+    text-align: center;
+    background: #353D40;
+    /*background: #ccc;*/
+    /**/
+    height: 40px;
+    /*line-height: 20px;*/
+    /*opacity: 0.7;*/
+}
+/*圆形的图标（代表对应的颜色）*/
+.circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    /*background: #5CC853;*/
+    margin: 15px 0;
+    /*垂直居中*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /**/
+    /*z-index: -1;*/
+}
+/*3个皮肤样式*/
+.theme-0 {
+    background: #4c5355;
+}
+
+.theme-1 {
+    background: #9DD2E5;
+}
+
+.theme-2 {
+    background: #FAC0C0;
+}
+/*鼠标输入 上去的样式*/
+.inTheme{
+    opacity: 0.7;
+    background: #2c3032;
+    /**/
+    transition: color 0.8s ease, background 0.8s ease;
+}

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="todoList.css">
+</head>
+<body>
+<div class="app">
+    <div class="todo-left theme-0" data-ind='0'>
+        <div class="logo">
+            <img src="rabbit.jpg" alt="logo">
+        </div>
+        <div class="theme">
+            主题
+        </div>
+        <div class="theme-color">
+            <div class="themeL" data-index='0'>
+                <span class="circle theme-0"></span>
+            </div>
+            <div class="themeL" data-index='1'>
+                <span class="circle theme-1"></span>
+            </div>
+            <div class="themeL"  data-index='2'>
+                <span class="circle theme-2"></span>
+            </div>
+        </div>
+
+    </div>
+    <div id="todo">
+        <div class="viewpart">
+            <div class="newTask">
+                <input  id='id-input-todo' type="text" placeholder="在此输入待办事项">
+                <span  id='id-button-add' class="btn add">添加事项</span>
+            </div>
+            <div class="todos" id="id-div-container">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="todoList.js"></script>
+</body>
+</html>
