@@ -208,40 +208,22 @@ var showLight = () => {
     //     })
     // }
     //
-
-
-    var theme = es('.themeL')
+    var circle = es('.circle')
     var left = e('.todo-left')
     var ind = left.dataset.ind
-    bindEventAll(theme, 'click', function(event) {
+    bindEventAll(circle, 'click', function(event) {
         var target = event.target
+        log(target)
+        // event.stopPropagation()
+        // return false
+
         // target.classList.add('inTheme')
-        //
+
         var parent = target.closest('.todo-left')
         var index = target.dataset.index
         parent.classList.remove(`theme-${ind}`)
         parent.classList.add(`theme-${index}`)
         ind = index
-    })
-
-    bindEventAll(theme, 'mouseover', function(event) {
-        var target = event.target
-        target.classList.add('inTheme')
-        //
-        // var parent = target.closest('.todo-left')
-        // var index = target.dataset.index
-        // log('index target', index, target)
-        // parent.classList.add(`theme-${index}`)
-
-    })
-    bindEventAll(theme, 'mouseout', function(event) {
-        var target = event.target
-        target.classList.remove('inTheme')
-
-        // var parent = target.closest('.todo-left')
-        // var index = target.dataset.index
-        // log('index target', index, target)
-        // parent.classList.remove(`theme-${index}`)
     })
 }
 
