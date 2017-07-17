@@ -1,4 +1,4 @@
-// 套路函数
+// 套路函数1
 // 定义一个 log 函数
 var log = console.log.bind(console)
 
