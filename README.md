@@ -1,5 +1,5 @@
 # todoList
-![](index/show.gif)
+![](show.gif)
 ```
 1.添加 todo 的功能
 2.完成 todo 的功能
